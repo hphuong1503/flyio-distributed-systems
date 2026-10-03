@@ -1,0 +1,21 @@
+2026/10/02 14:35:48 Received {c6 n4 {"type":"init","node_id":"n4","node_ids":["n0","n1","n2","n3","n4","n5","n6","n7","n8","n9"],"msg_id":1}}
+2026/10/02 14:35:48 Node n4 initialized
+2026/10/02 14:35:48 Sent {"src":"n4","dest":"c6","body":{"in_reply_to":1,"type":"init_ok"}}
+2026/10/02 14:35:49 Received {c25 n4 {"echo":"Please echo 85","type":"echo","msg_id":1}}
+2026/10/02 14:35:49 Sent {"src":"n4","dest":"c25","body":{"echo":"Please echo 85","in_reply_to":1,"msg_id":1,"type":"echo_ok"}}
+2026/10/02 14:35:50 Received {c25 n4 {"echo":"Please echo 36","type":"echo","msg_id":2}}
+2026/10/02 14:35:50 Sent {"src":"n4","dest":"c25","body":{"echo":"Please echo 36","in_reply_to":2,"msg_id":2,"type":"echo_ok"}}
+2026/10/02 14:35:51 Received {c25 n4 {"echo":"Please echo 30","type":"echo","msg_id":3}}
+2026/10/02 14:35:51 Sent {"src":"n4","dest":"c25","body":{"echo":"Please echo 30","in_reply_to":3,"msg_id":3,"type":"echo_ok"}}
+2026/10/02 14:35:51 Received {c25 n4 {"echo":"Please echo 75","type":"echo","msg_id":4}}
+2026/10/02 14:35:51 Sent {"src":"n4","dest":"c25","body":{"echo":"Please echo 75","in_reply_to":4,"msg_id":4,"type":"echo_ok"}}
+2026/10/02 14:35:52 Received {c25 n4 {"echo":"Please echo 4","type":"echo","msg_id":5}}
+2026/10/02 14:35:52 Sent {"src":"n4","dest":"c25","body":{"echo":"Please echo 4","in_reply_to":5,"msg_id":5,"type":"echo_ok"}}
+2026/10/02 14:35:56 Received {c25 n4 {"echo":"Please echo 81","type":"echo","msg_id":6}}
+2026/10/02 14:35:56 Sent {"src":"n4","dest":"c25","body":{"echo":"Please echo 81","in_reply_to":6,"msg_id":6,"type":"echo_ok"}}
+2026/10/02 14:35:56 Received {c25 n4 {"echo":"Please echo 125","type":"echo","msg_id":7}}
+2026/10/02 14:35:56 Sent {"src":"n4","dest":"c25","body":{"echo":"Please echo 125","in_reply_to":7,"msg_id":7,"type":"echo_ok"}}
+2026/10/02 14:35:57 Received {c25 n4 {"echo":"Please echo 127","type":"echo","msg_id":8}}
+2026/10/02 14:35:57 Sent {"src":"n4","dest":"c25","body":{"echo":"Please echo 127","in_reply_to":8,"msg_id":8,"type":"echo_ok"}}
+2026/10/02 14:35:58 Received {c25 n4 {"echo":"Please echo 92","type":"echo","msg_id":9}}
+2026/10/02 14:35:58 Sent {"src":"n4","dest":"c25","body":{"echo":"Please echo 92","in_reply_to":9,"msg_id":9,"type":"echo_ok"}}

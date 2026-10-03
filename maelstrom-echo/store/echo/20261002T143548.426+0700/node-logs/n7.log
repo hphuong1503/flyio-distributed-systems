@@ -1,0 +1,17 @@
+2026/10/02 14:35:48 Received {c9 n7 {"type":"init","node_id":"n7","node_ids":["n0","n1","n2","n3","n4","n5","n6","n7","n8","n9"],"msg_id":1}}
+2026/10/02 14:35:48 Node n7 initialized
+2026/10/02 14:35:48 Sent {"src":"n7","dest":"c9","body":{"in_reply_to":1,"type":"init_ok"}}
+2026/10/02 14:35:51 Received {c28 n7 {"echo":"Please echo 25","type":"echo","msg_id":1}}
+2026/10/02 14:35:51 Sent {"src":"n7","dest":"c28","body":{"echo":"Please echo 25","in_reply_to":1,"msg_id":1,"type":"echo_ok"}}
+2026/10/02 14:35:53 Received {c28 n7 {"echo":"Please echo 69","type":"echo","msg_id":2}}
+2026/10/02 14:35:53 Sent {"src":"n7","dest":"c28","body":{"echo":"Please echo 69","in_reply_to":2,"msg_id":2,"type":"echo_ok"}}
+2026/10/02 14:35:54 Received {c28 n7 {"echo":"Please echo 58","type":"echo","msg_id":3}}
+2026/10/02 14:35:54 Sent {"src":"n7","dest":"c28","body":{"echo":"Please echo 58","in_reply_to":3,"msg_id":3,"type":"echo_ok"}}
+2026/10/02 14:35:55 Received {c28 n7 {"echo":"Please echo 85","type":"echo","msg_id":4}}
+2026/10/02 14:35:55 Sent {"src":"n7","dest":"c28","body":{"echo":"Please echo 85","in_reply_to":4,"msg_id":4,"type":"echo_ok"}}
+2026/10/02 14:35:55 Received {c28 n7 {"echo":"Please echo 65","type":"echo","msg_id":5}}
+2026/10/02 14:35:55 Sent {"src":"n7","dest":"c28","body":{"echo":"Please echo 65","in_reply_to":5,"msg_id":5,"type":"echo_ok"}}
+2026/10/02 14:35:57 Received {c28 n7 {"echo":"Please echo 37","type":"echo","msg_id":6}}
+2026/10/02 14:35:57 Sent {"src":"n7","dest":"c28","body":{"echo":"Please echo 37","in_reply_to":6,"msg_id":6,"type":"echo_ok"}}
+2026/10/02 14:35:58 Received {c28 n7 {"echo":"Please echo 36","type":"echo","msg_id":7}}
+2026/10/02 14:35:58 Sent {"src":"n7","dest":"c28","body":{"echo":"Please echo 36","in_reply_to":7,"msg_id":7,"type":"echo_ok"}}

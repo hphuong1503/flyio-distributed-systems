@@ -1,0 +1,19 @@
+2026/10/02 14:35:48 Received {c3 n9 {"type":"init","node_id":"n9","node_ids":["n0","n1","n2","n3","n4","n5","n6","n7","n8","n9"],"msg_id":1}}
+2026/10/02 14:35:48 Node n9 initialized
+2026/10/02 14:35:48 Sent {"src":"n9","dest":"c3","body":{"in_reply_to":1,"type":"init_ok"}}
+2026/10/02 14:35:49 Received {c21 n9 {"echo":"Please echo 56","type":"echo","msg_id":1}}
+2026/10/02 14:35:49 Sent {"src":"n9","dest":"c21","body":{"echo":"Please echo 56","in_reply_to":1,"msg_id":1,"type":"echo_ok"}}
+2026/10/02 14:35:50 Received {c21 n9 {"echo":"Please echo 21","type":"echo","msg_id":2}}
+2026/10/02 14:35:50 Sent {"src":"n9","dest":"c21","body":{"echo":"Please echo 21","in_reply_to":2,"msg_id":2,"type":"echo_ok"}}
+2026/10/02 14:35:52 Received {c21 n9 {"echo":"Please echo 107","type":"echo","msg_id":3}}
+2026/10/02 14:35:52 Sent {"src":"n9","dest":"c21","body":{"echo":"Please echo 107","in_reply_to":3,"msg_id":3,"type":"echo_ok"}}
+2026/10/02 14:35:52 Received {c21 n9 {"echo":"Please echo 125","type":"echo","msg_id":4}}
+2026/10/02 14:35:52 Sent {"src":"n9","dest":"c21","body":{"echo":"Please echo 125","in_reply_to":4,"msg_id":4,"type":"echo_ok"}}
+2026/10/02 14:35:53 Received {c21 n9 {"echo":"Please echo 86","type":"echo","msg_id":5}}
+2026/10/02 14:35:53 Sent {"src":"n9","dest":"c21","body":{"echo":"Please echo 86","in_reply_to":5,"msg_id":5,"type":"echo_ok"}}
+2026/10/02 14:35:53 Received {c21 n9 {"echo":"Please echo 81","type":"echo","msg_id":6}}
+2026/10/02 14:35:53 Sent {"src":"n9","dest":"c21","body":{"echo":"Please echo 81","in_reply_to":6,"msg_id":6,"type":"echo_ok"}}
+2026/10/02 14:35:55 Received {c21 n9 {"echo":"Please echo 57","type":"echo","msg_id":7}}
+2026/10/02 14:35:55 Sent {"src":"n9","dest":"c21","body":{"echo":"Please echo 57","in_reply_to":7,"msg_id":7,"type":"echo_ok"}}
+2026/10/02 14:35:57 Received {c21 n9 {"echo":"Please echo 76","type":"echo","msg_id":8}}
+2026/10/02 14:35:57 Sent {"src":"n9","dest":"c21","body":{"echo":"Please echo 76","in_reply_to":8,"msg_id":8,"type":"echo_ok"}}

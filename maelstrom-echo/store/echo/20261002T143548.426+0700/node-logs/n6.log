@@ -1,0 +1,9 @@
+2026/10/02 14:35:48 Received {c0 n6 {"type":"init","node_id":"n6","node_ids":["n0","n1","n2","n3","n4","n5","n6","n7","n8","n9"],"msg_id":1}}
+2026/10/02 14:35:48 Node n6 initialized
+2026/10/02 14:35:48 Sent {"src":"n6","dest":"c0","body":{"in_reply_to":1,"type":"init_ok"}}
+2026/10/02 14:35:52 Received {c29 n6 {"echo":"Please echo 14","type":"echo","msg_id":1}}
+2026/10/02 14:35:52 Sent {"src":"n6","dest":"c29","body":{"echo":"Please echo 14","in_reply_to":1,"msg_id":1,"type":"echo_ok"}}
+2026/10/02 14:35:56 Received {c29 n6 {"echo":"Please echo 89","type":"echo","msg_id":2}}
+2026/10/02 14:35:56 Sent {"src":"n6","dest":"c29","body":{"echo":"Please echo 89","in_reply_to":2,"msg_id":2,"type":"echo_ok"}}
+2026/10/02 14:35:58 Received {c29 n6 {"echo":"Please echo 93","type":"echo","msg_id":3}}
+2026/10/02 14:35:58 Sent {"src":"n6","dest":"c29","body":{"echo":"Please echo 93","in_reply_to":3,"msg_id":3,"type":"echo_ok"}}
