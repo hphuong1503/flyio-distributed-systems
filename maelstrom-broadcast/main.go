@@ -34,7 +34,7 @@ func main() {
 	s.n.Handle("topology", s.handleTopology)
 	s.n.Handle("gossip", s.handleGossip)
 
-	go s.gossiploop()
+	//go s.gossiploop()
 
 	if err := s.n.Run(); err != nil {
 		log.Fatal(err)
@@ -185,7 +185,20 @@ func (s *server) handleTopology(msg maelstrom.Message) error {
 	}
 
 	s.mu.Lock()
-	s.neighbors = body.Topology[s.n.ID()]
+	allNodes := s.n.NodeIDs()
+
+	if(s.n.ID() == "n0") {
+		// Node n0 will have all nodes as neighbors
+		s.neighbors = make([]string, 0, len(allNodes)-1)
+		for _, node := range allNodes {
+			if node != s.n.ID() {
+				s.neighbors = append(s.neighbors, node)
+			}
+		}
+	} else {
+		// For other nodes, use the topology provided in the message
+		s.neighbors = []string{"n0"}
+	}
 	s.mu.Unlock()
 
 	// send the response back to the client
