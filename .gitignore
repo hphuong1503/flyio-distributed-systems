@@ -1,1 +1,27 @@
+# Documentation
 docs/
+
+# Maelstrom test results and logs
+**/store/
+
+# Compiled challenge binaries
+maelstrom-*/maelstrom-*
+!maelstrom-*/*.go
+!maelstrom-*/*.md
+bin/
+**/bin/
+
+# Maelstrom runner symlink in challenge directories
+maelstrom-*/maelstrom
+
+# Go build artifacts
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# macOS metadata
+.DS_Store
