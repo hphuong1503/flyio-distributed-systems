@@ -14,6 +14,9 @@ bin/
 # Maelstrom runner symlink in challenge directories
 maelstrom-*/maelstrom
 
+# Maelstrom binary/tool directory
+maelstrom/
+
 # Go build artifacts
 *.exe
 *.exe~
