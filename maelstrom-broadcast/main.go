@@ -47,8 +47,6 @@ func main() {
 	}
 }
 
-
-
 func (s *server) gossiploop() {
 	// create a timer that will trigger after 100 milliseconds
 	ticker := time.NewTicker(100 * time.Millisecond)
