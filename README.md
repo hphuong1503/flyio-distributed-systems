@@ -13,7 +13,7 @@ Solutions for the [Fly.io Distributed Systems Challenges](https://fly.io/dist-sy
 | 3c | [Fault-Tolerant Broadcast](https://fly.io/dist-sys/3c/) | [`maelstrom-broadcast`](./maelstrom-broadcast) | ✅ **Completed** | Periodic anti-entropy gossip resilient to network partitions |
 | 3d | [Efficient Broadcast I](https://fly.io/dist-sys/3d/) | [`maelstrom-broadcast`](./maelstrom-broadcast) | ✅ **Completed** | Star topology, 23.66 msgs/op (< 30), 180ms median latency (< 400ms) |
 | 3e | [Efficient Broadcast II](https://fly.io/dist-sys/3e/) | [`maelstrom-broadcast`](./maelstrom-broadcast) | ✅ **Completed** | Balanced tree + Delta Tracking, 8.49 msgs/op (< 20) under partition |
-| 4 | [Grow-Only Counter](https://fly.io/dist-sys/4/) | `maelstrom-counter` | 🚧 **In Progress** | G-Counter CRDT backed by `seq-kv` & Nemesis Partition |
+| 4 | [Grow-Only Counter](https://fly.io/dist-sys/4/) | [`maelstrom-counter`](./maelstrom-counter) | ✅ **Completed** | Stateless Group Commit & Stateful CRDT backed by `seq-kv` |
 | 5 | [Kafka-Style Log](https://fly.io/dist-sys/5a/) | - | ⏳ Pending | Single-node, multi-node & replicated log |
 | 6 | [Totally-Ordered Transactions](https://fly.io/dist-sys/6a/) | - | ⏳ Pending | Distributed transactional KV |
 
@@ -48,13 +48,14 @@ Solutions for the [Fly.io Distributed Systems Challenges](https://fly.io/dist-sy
   * **Lost count:** `0`, **Availability:** `1.0` (1,739/1,739 operations)
   * **Architecture:** 3-tier Balanced Spanning Tree + Delta Tracking (`unAcked`) Buffer + Periodic Batched Gossip (100ms)
 
----
-
-## 🚧 Current Work: Challenge 4 - Grow-Only Counter (G-Counter)
-
-* **Objective:** Implement a stateless Grow-Only Counter (G-Counter CRDT) backed by Maelstrom's sequential-consistency key-value store (`seq-kv`).
-* **Environment:** 3 nodes, rate 100 req/s, time limit 20s, `--nemesis partition`.
-
+### 📊 Challenge 4: Grow-Only Counter (G-Counter)
+* **Workload & Command:** `maelstrom test -w g-counter --node-count 3 --rate 100 --time-limit 20 --nemesis partition`
+* **Validation:** `:valid? true`, `:ok-fraction 1.0` (Zero dropped operations under network partition)
+* **Implemented Architectures**
+  * Stateful Write-Behind CRDT (`main.go`):
+    * **Messages per op:** `2.91` msgs/op (32% bandwidth reduction)
+    * **Availability:** `1.0` (1,692 / 1,692 operations)
+    * **Characteristics:** Sub-millisecond in-memory write ACK ($< 0.1$ms), 100ms periodic CAS flush + monotonic peer read cache.
 ---
 
 ## Prerequisites
